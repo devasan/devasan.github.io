@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://www.devasan.com/sitemap.xml
-Sitemap: http://www.devasan.com/baidusitemap.xml
+Sitemap: http://devasan.com/sitemap.xml
+Sitemap: http://devasan.com/baidusitemap.xml
