@@ -1,0 +1,820 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="自从接触IOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。
+首先是填写一些资料，进入微博开放平台，新建移动应用，按照要求填写，Bundle ID一定要填写正确（apple id可以先随便填，到时候可以从iTunes Connet申请了再来修改）。还有就是在高级信息里的回调">
+<meta property="og:type" content="article">
+<meta property="og:title" content="集成新浪微博">
+<meta property="og:url" content="http://devasan.com/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/index.html">
+<meta property="og:site_name" content="多情的阿三">
+<meta property="og:description" content="自从接触IOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。
+首先是填写一些资料，进入微博开放平台，新建移动应用，按照要求填写，Bundle ID一定要填写正确（apple id可以先随便填，到时候可以从iTunes Connet申请了再来修改）。还有就是在高级信息里的回调">
+<meta property="og:updated_time" content="2016-11-01T13:44:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="集成新浪微博">
+<meta name="twitter:description" content="自从接触IOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。
+首先是填写一些资料，进入微博开放平台，新建移动应用，按照要求填写，Bundle ID一定要填写正确（apple id可以先随便填，到时候可以从iTunes Connet申请了再来修改）。还有就是在高级信息里的回调">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6347984835507652000',
+      author: '多情的阿三'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://devasan.com/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/"/>
+
+
+  <title> 集成新浪微博 | 多情的阿三 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">多情的阿三</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                集成新浪微博
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2014-11-04T21:12:49+08:00" content="2014-11-04">
+              2014-11-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学无止境/" itemprop="url" rel="index">
+                    <span itemprop="name">学无止境</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>自从接触IOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。</p>
+<p>首先是填写一些资料，进入<a href="http://open.weibo.com" target="_blank" rel="external">微博开放平台</a>，新建移动应用，按照要求填写，Bundle ID一定要填写正确（apple id可以先随便填，到时候可以从iTunes Connet申请了再来修改）。还有就是在高级信息里的回调页地址一定要写，以前可以不写，大概是半年前新浪开始强制要求写入。</p>
+<p>然后我们会获得app key 和app secret ,umeng的分享是会要求分享平台的key和secret 都填入的，但是直接用WeiboSDK好像就用到一个key。</p>
+<p>接着添加URL scheme，IOS程序间互相调用，就是依靠URL scheme跳转的。进入TARGETS-&gt;info-&gt;URL types 添加scheme，“wb+app key”即可。</p>
+<p>把下载的SDK的libWeiboSDK文件夹加入项目，添加UIKit、Foudation、CoreGraphics这三个依赖包。参考着demo里的代码，如下操作</p>
+<p><pre class="lang:default decode:true">//微博相关</pre></p>
+<p>#define WB_APP_KEY      @”29615<strong>*</strong>“</p>
+<p>#define WB_APP_SECRET   @”2975f2a<strong>**</strong>0ee54”</p>
+<p>#define kRedirectURI    @”<a href="http://devasan.com">http://devasan.com</a>“</p>
+<p>#define WB_SCHEME       @”wb29615<strong>*</strong>“<br>在AppDelegate.m启动方法里添加</p>
+<p><pre class="lang:default decode:true">- (BOOL)application:(UIApplication <em>)application didFinishLaunchingWithOptions:(NSDictionary </em>)launchOptions {</pre></p>
+<p>……<br>    //wb<br>    [WeiboSDK registerApp:WB_APP_KEY];<br>……<br>}</p>
+<p><pre class="lang:default decode:true ">- (BOOL)application:(UIApplication <em>)application openURL:(NSURL </em>)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation<br>{<br>    if ([[url scheme] isEqualToString:WB_SCHEME]) {<br>        return [WeiboSDK handleOpenURL:url delegate:self];<br>    }<br>    return YES;<br>}</pre><br>接着是实现代理方法</p>
+<p><pre class="lang:default decode:true">- (void)didReceiveWeiboRequest:(WBBaseRequest *)request<br>{</pre></p>
+<p>}</p>
+<ul>
+<li><p>(void)didReceiveWeiboResponse:(WBBaseResponse *)response<br>{<br>  if ([response isKindOfClass:WBSendMessageToWeiboResponse.class])<br>  {</p>
+<p>  }<br>  else if ([response isKindOfClass:WBAuthorizeResponse.class])<br>  {</p>
+<pre><code>//if success
+self.wbtoken = [(WBAuthorizeResponse *)response accessToken];
+[[ASConfig sharedInstance] setUser:[(WBAuthorizeResponse *)response userID]];
+[[ASConfig sharedInstance] setToken:self.wbtoken];
+</code></pre><p>  }<br>}<br>做完这些基本上已经差不多了，剩下的就是根据需求查阅不同的API完成需求了。因为到这差不多已经配置完成了，后续的需要根据需求实现，所以我就没有再花费什么时间。下面的代码有些参数设置类型是不符合现实使用的，我是为了调试方便而设置的。<br><pre class="lang:default decode:true">//<br>//  ASWeiboHelper.h<br>//  APP<br>//<br>//  Created by asan on 14/11/4.<br>//  Copyright (c) 2014年 asan. All rights reserved.<br>//</pre></p>
+</li>
+</ul>
+<p>#import &lt;Foundation/Foundation.h&gt;</p>
+<p>typedef void(^FailBlock) (NSError <em>error);<br>typedef void(^Successblock) (NSString </em>reslut);</p>
+<p>@interface ASWeiboHelper : NSObject</p>
+<p>//授权</p>
+<ul>
+<li><p>(void)authorize;</p>
+</li>
+<li><p>(void)loginOut;</p>
+</li>
+</ul>
+<p>//查询用户信息</p>
+<ul>
+<li>(void)searchForcurrentUserInfo:(id&lt;WBHttpRequestDelegate&gt;)delegate;</li>
+</ul>
+<p>//请求接口</p>
+<ul>
+<li>(void)requstUrl:(NSString *)url<pre><code>httpMethod:(NSString *)methd
+    params:(NSDictionary *)params
+  delegate:(id&amp;lt;WBHttpRequestDelegate&amp;gt;)delegate
+       tag:(NSString *)tag;
+</code></pre></li>
+</ul>
+<p>//到客户端发微博</p>
+<ul>
+<li>(void)sendMessageForWeibo:(NSString *)content<pre><code>image:(NSString *)image;
+</code></pre></li>
+</ul>
+<p>//发微博背后操作</p>
+<ul>
+<li>(void) postStatuWithContent:(NSString *)content<pre><code>   image:(id)image
+location:(CLLocation *)location
+delegate:(id&amp;lt;WBHttpRequestDelegate&amp;gt;)delegate;
+</code></pre></li>
+</ul>
+<p>@end</p>
+<p>//<br>//  ASWeiboHelper.m<br>//  APP<br>//<br>//  Created by asan on 14/11/4.<br>//  Copyright (c) 2014年 asan. All rights reserved.<br>//</p>
+<p>#import “ASWeiboHelper.h”</p>
+<p>@implementation ASWeiboHelper</p>
+<ul>
+<li><p>(void)authorize<br>{<br>  WBAuthorizeRequest *request = [WBAuthorizeRequest request];<br>  request.redirectURI = kRedirectURI;<br>  request.scope = @”all”;<br>  [WeiboSDK sendRequest:request];<br>}</p>
+</li>
+<li><p>(void)loginOut<br>{</p>
+</li>
+</ul>
+<p>}</p>
+<ul>
+<li><p>(void)searchForcurrentUserInfo:(id&lt;WBHttpRequestDelegate&gt;)delegate<br>{<br>  NSDictionary *params = [[NSDictionary alloc]initWithObjectsAndKeys:[[ASConfig sharedInstance] getToken],@”access_token”,[[ASConfig sharedInstance] getUser],@”uid”,@”20”,@”next_cursor”, nil];</p>
+<p>  [WBHttpRequest requestWithAccessToken:[[ASConfig sharedInstance] getToken] url:@”<a href="https://api.weibo.com/2/users/show.json" target="_blank" rel="external">https://api.weibo.com/2/users/show.json</a>“ httpMethod:@”GET” params:params delegate:delegate withTag:@”usershow”];<br>}</p>
+</li>
+<li><p>(void)requstUrl:(NSString *)url</p>
+<pre><code>httpMethod:(NSString *)methd
+    params:(NSDictionary *)params
+  delegate:(id&amp;lt;WBHttpRequestDelegate&amp;gt;)delegate
+       tag:(NSString *)tag
+</code></pre><p>{<br>  [WBHttpRequest requestWithAccessToken:[[ASConfig sharedInstance] getToken] url:url httpMethod:methd params:params delegate:delegate withTag:tag];<br>}</p>
+</li>
+<li><p>(void)postStatuWithContent:(NSString *)content</p>
+<pre><code>   image:(id )image
+location:(CLLocation *)location
+delegate:(id&amp;lt;WBHttpRequestDelegate&amp;gt;)delegate
+</code></pre></li>
+</ul>
+<p>{<br>    if (!image) {<br>        NSDictionary <em>params = [[NSDictionary alloc]initWithObjectsAndKeys:content,@”status”, nil];<br>        [self requstUrl:@”<a href="https://api.weibo.com/2/statuses/update.json" target="_blank" rel="external">https://api.weibo.com/2/statuses/update.json</a>“ httpMethod:@”POST” params:params delegate:delegate tag:nil];<br>    }else<br>    {<br>        NSDictionary </em>params = [[NSDictionary alloc]initWithObjectsAndKeys:content,@”status”,image,@”pic”, nil];<br>        [self requstUrl:@”<a href="https://upload.api.weibo.com/2/statuses/upload.json" target="_blank" rel="external">https://upload.api.weibo.com/2/statuses/upload.json</a>“ httpMethod:@”POST” params:params delegate:delegate tag:nil];</p>
+<pre><code>}
+</code></pre><p>}</p>
+<ul>
+<li>(void)sendMessageForWeibo:(NSString <em>)content image:(NSString </em>)image<br>{<br>  WBSendMessageToWeiboRequest *request = [WBSendMessageToWeiboRequest requestWithMessage:[self shareMessage:content image:image]];<br>  request.shouldOpenWeiboAppInstallPageIfNotInstalled = NO;<br>  [WeiboSDK sendRequest:request];</li>
+</ul>
+<p>}</p>
+<ul>
+<li><p>(WBMessageObject <em>)shareMessage:(NSString </em>)content image:(id)image<br>{<br>  WBMessageObject *message = [WBMessageObject message];</p>
+<p>  message.text = content;</p>
+<p>  WBImageObject *_image = [WBImageObject object];<br>  _image.imageData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:image ofType:@”jpg”]];<br>  message.imageObject = _image;</p>
+<p>  return message;<br>}<br>@end<br><br>还有点不足就是没有能够用block把它的delegate方法封装起来，每次都要实现它的代理方法实在觉得很烦躁。这个坑，自己有时间一定要填。</p>
+</li>
+</ul>
+<p>&nbsp;</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>求鼓励，求支持！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat_rewards.png" alt="devasan WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/11/03/e5-86-99-e5-9c-a8-e4-b8-80-e5-91-a8-e5-b9-b4/" rel="next" title="写在一周年">
+                <i class="fa fa-chevron-left"></i> 写在一周年
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2014/11/06/jsonmodel-e7-9a-84-e5-ad-a6-e4-b9-a0-e4-bd-bf-e7-94-a8/" rel="prev" title="JSONModel的学习使用">
+                JSONModel的学习使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/"
+     data-title="集成新浪微博"
+     data-content=""
+     data-url="http://devasan.com/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/"
+           data-title="集成新浪微博" data-url="http://devasan.com/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/devasan_avatar.png"
+               alt="devasan" />
+          <p class="site-author-name" itemprop="name">devasan</p>
+          <p class="site-description motion-element" itemprop="description">要多努力才能看起来毫不费力</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">25</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/devasan" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/devasan" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/davenport" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.ymonke.com/" title="ymonke" target="_blank">ymonke</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">devasan</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io" rel="external nofollow">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"devasan"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
