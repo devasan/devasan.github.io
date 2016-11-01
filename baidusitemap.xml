@@ -22,35 +22,17 @@
 
     
   <url>
-    <loc>http://devasan.com/2015/01/26/e4-bf-ae-e6-94-b9pod-e4-be-9d-e8-b5-96-e5-ba-93-e7-9a-84-e6-ba-90-e7-a0-81/</loc>
+    <loc>http://devasan.com/2015/03/13/cocoapod-header-file-not-found/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>修改pod依赖库的源码</title>
-        <pubTime>2015-01-26T06:14:43.000Z</pubTime>
+        <title>CocoaPod header file not found</title>
+        <pubTime>2015-03-13T03:02:50.000Z</pubTime>
         
          
            
              
               <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2015/04/27/e4-bb-96-e5-b1-b1-e4-b9-8b-e7-9f-b3/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>他山之石</title>
-        <pubTime>2015-04-27T03:39:29.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="拾人牙慧" url="http://devasan.com/categories/%E6%8B%BE%E4%BA%BA%E7%89%99%E6%85%A7/"/>
           
         </display>
     </data>
@@ -69,6 +51,24 @@
            
              
               <breadCrumb title="拾人牙慧" url="http://devasan.com/categories/%E6%8B%BE%E4%BA%BA%E7%89%99%E6%85%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2015/01/26/e4-bf-ae-e6-94-b9pod-e4-be-9d-e8-b5-96-e5-ba-93-e7-9a-84-e6-ba-90-e7-a0-81/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>修改pod依赖库的源码</title>
+        <pubTime>2015-01-26T06:14:43.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
           
         </display>
     </data>
@@ -112,12 +112,12 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/11/20/e8-87-aa-e5-ae-9a-e4-b9-89-e7-9a-84tableviewcell/</loc>
+    <loc>http://devasan.com/2015/06/08/e7-bb-9f-e8-ae-a1-e6-97-b6-e8-8e-b7-e5-8f-96-e8-ae-be-e5-a4-87ip-e5-9c-b0-e5-9d-80/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>自定义的tableViewCell</title>
-        <pubTime>2014-11-20T13:08:53.000Z</pubTime>
+        <title>统计时获取设备IP地址</title>
+        <pubTime>2015-06-08T08:44:50.000Z</pubTime>
         
          
            
@@ -148,12 +148,12 @@
 
     
   <url>
-    <loc>http://devasan.com/2015/06/08/e7-bb-9f-e8-ae-a1-e6-97-b6-e8-8e-b7-e5-8f-96-e8-ae-be-e5-a4-87ip-e5-9c-b0-e5-9d-80/</loc>
+    <loc>http://devasan.com/2014/11/20/e8-87-aa-e5-ae-9a-e4-b9-89-e7-9a-84tableviewcell/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>统计时获取设备IP地址</title>
-        <pubTime>2015-06-08T08:44:50.000Z</pubTime>
+        <title>自定义的tableViewCell</title>
+        <pubTime>2014-11-20T13:08:53.000Z</pubTime>
         
          
            
@@ -202,6 +202,24 @@
 
     
   <url>
+    <loc>http://devasan.com/2014/12/18/e8-ae-b0uigesturerecognizer-e9-81-87-e5-88-b0-e7-9a-84-e5-9d-91/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>记UIGestureRecognizer和UITableviewCell遇到的坑</title>
+        <pubTime>2014-12-18T02:48:12.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://devasan.com/2014/12/29/e9-85-8d-e7-bd-aepodspec-e6-96-87-e4-bb-b6/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
@@ -238,6 +256,24 @@
 
     
   <url>
+    <loc>http://devasan.com/2015/04/27/e4-bb-96-e5-b1-b1-e4-b9-8b-e7-9f-b3/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>他山之石</title>
+        <pubTime>2015-04-27T03:39:29.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="拾人牙慧" url="http://devasan.com/categories/%E6%8B%BE%E4%BA%BA%E7%89%99%E6%85%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://devasan.com/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
@@ -249,24 +285,6 @@
            
              
               <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2015/03/13/cocoapod-header-file-not-found/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>CocoaPod header file not found</title>
-        <pubTime>2015-03-13T03:02:50.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
           
         </display>
     </data>
@@ -321,24 +339,6 @@
            
              
               <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2014/12/18/e8-ae-b0uigesturerecognizer-e9-81-87-e5-88-b0-e7-9a-84-e5-9d-91/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>记UIGestureRecognizer和UITableviewCell遇到的坑</title>
-        <pubTime>2014-12-18T02:48:12.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
           
         </display>
     </data>
