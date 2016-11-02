@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://devasan.com/2015/09/24/e9-9a-8f-e7-ac-94/</loc>
+    
+    <lastmod>2016-11-02T03:10:54.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://devasan.com/2016/10/31/hexo-migrator-wordpress/</loc>
     
     <lastmod>2016-11-01T14:09:15.000Z</lastmod>
@@ -31,13 +38,6 @@
   
   <url>
     <loc>http://devasan.com/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/</loc>
-    
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://devasan.com/2014/12/07/e5-8a-a8-e6-80-81-e8-ae-a1-e7-ae-97cell-e9-ab-98-e5-ba-a6/</loc>
     
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     
@@ -93,7 +93,7 @@
   </url>
   
   <url>
-    <loc>http://devasan.com/2015/09/24/e9-9a-8f-e7-ac-94/</loc>
+    <loc>http://devasan.com/2015/03/13/cocoapod-header-file-not-found/</loc>
     
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     
@@ -114,7 +114,7 @@
   </url>
   
   <url>
-    <loc>http://devasan.com/2015/03/13/cocoapod-header-file-not-found/</loc>
+    <loc>http://devasan.com/2014/10/30/e5-85-b3-e4-ba-8excode6-e7-9a-84-e4-b8-80-e4-ba-9b-e8-ae-b0-e4-ba-8b/</loc>
     
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     
@@ -128,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://devasan.com/2014/10/30/e5-85-b3-e4-ba-8excode6-e7-9a-84-e4-b8-80-e4-ba-9b-e8-ae-b0-e4-ba-8b/</loc>
+    <loc>http://devasan.com/2015/01/26/e4-bf-ae-e6-94-b9pod-e4-be-9d-e8-b5-96-e5-ba-93-e7-9a-84-e6-ba-90-e7-a0-81/</loc>
     
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://devasan.com/2015/01/26/e4-bf-ae-e6-94-b9pod-e4-be-9d-e8-b5-96-e5-ba-93-e7-9a-84-e6-ba-90-e7-a0-81/</loc>
+    <loc>http://devasan.com/2014/11/03/e5-86-99-e5-9c-a8-e4-b8-80-e5-91-a8-e5-b9-b4/</loc>
     
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     
@@ -177,7 +177,7 @@
   </url>
   
   <url>
-    <loc>http://devasan.com/2014/11/03/e5-86-99-e5-9c-a8-e4-b8-80-e5-91-a8-e5-b9-b4/</loc>
+    <loc>http://devasan.com/2014/12/07/e5-8a-a8-e6-80-81-e8-ae-a1-e7-ae-97cell-e9-ab-98-e5-ba-a6/</loc>
     
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     
