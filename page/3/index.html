@@ -259,6 +259,131 @@
             
               
                 
+                <a class="post-title-link" href="/2014/11/07/model-e9-87-8d-e6-9e-84-e8-ae-b0-e4-ba-8b/" itemprop="url">
+                  Model重构记事
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2014-11-07T16:34:59+08:00" content="2014-11-07">
+              2014-11-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学无止境/" itemprop="url" rel="index">
+                    <span itemprop="name">学无止境</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2014/11/07/model-e9-87-8d-e6-9e-84-e8-ae-b0-e4-ba-8b/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2014/11/07/model-e9-87-8d-e6-9e-84-e8-ae-b0-e4-ba-8b/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          cache缓存只在运行期间有效，再次启动程序，取到的缓存是空。下面贴代码，经过多次调试，已确认在程序运行期间，如果调用了set方法，那么一直可以取到get方法的缓存对象。但是，当程序被kill的时候，也就是在如下方法的时候，缓存被清空了，返回NULL。NSCache是在应用内存吃紧的时候才会去清理缓
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2014/11/07/model-e9-87-8d-e6-9e-84-e8-ae-b0-e4-ba-8b/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2014/11/06/jsonmodel-e7-9a-84-e5-ad-a6-e4-b9-a0-e4-bd-bf-e7-94-a8/" itemprop="url">
                   JSONModel的学习使用
                 </a>
@@ -1045,7 +1170,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-count">27</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
