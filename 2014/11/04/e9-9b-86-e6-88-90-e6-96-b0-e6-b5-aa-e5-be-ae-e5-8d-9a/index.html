@@ -84,18 +84,18 @@
 
 
 
-<meta name="description" content="自从接触IOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。
+<meta name="description" content="自从接触iOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。
 首先是填写一些资料，进入微博开放平台，新建移动应用，按照要求填写，Bundle ID一定要填写正确（apple id可以先随便填，到时候可以从iTunes Connet申请了再来修改）。还有就是在高级信息里的回调">
 <meta property="og:type" content="article">
 <meta property="og:title" content="集成新浪微博">
 <meta property="og:url" content="http://devasan.com/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/index.html">
 <meta property="og:site_name" content="多情的阿三">
-<meta property="og:description" content="自从接触IOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。
+<meta property="og:description" content="自从接触iOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。
 首先是填写一些资料，进入微博开放平台，新建移动应用，按照要求填写，Bundle ID一定要填写正确（apple id可以先随便填，到时候可以从iTunes Connet申请了再来修改）。还有就是在高级信息里的回调">
-<meta property="og:updated_time" content="2016-11-01T13:44:35.000Z">
+<meta property="og:updated_time" content="2016-12-28T06:28:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="集成新浪微博">
-<meta name="twitter:description" content="自从接触IOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。
+<meta name="twitter:description" content="自从接触iOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。
 首先是填写一些资料，进入微博开放平台，新建移动应用，按照要求填写，Bundle ID一定要填写正确（apple id可以先随便填，到时候可以从iTunes Connet申请了再来修改）。还有就是在高级信息里的回调">
 
 
@@ -326,10 +326,10 @@
       
 
       
-        <p>自从接触IOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。</p>
+        <p>自从接触iOS以来，我一直还是比较依赖第三方社会化分享的。用起来也是挺省心的，前几天群里有人说用第三方的不足，观点其实还是有些片面的。但是我这个暴脾气，肯定是不能忍的，果断今天去琢磨下。</p>
 <p>首先是填写一些资料，进入<a href="http://open.weibo.com" target="_blank" rel="external">微博开放平台</a>，新建移动应用，按照要求填写，Bundle ID一定要填写正确（apple id可以先随便填，到时候可以从iTunes Connet申请了再来修改）。还有就是在高级信息里的回调页地址一定要写，以前可以不写，大概是半年前新浪开始强制要求写入。</p>
 <p>然后我们会获得app key 和app secret ,umeng的分享是会要求分享平台的key和secret 都填入的，但是直接用WeiboSDK好像就用到一个key。</p>
-<p>接着添加URL scheme，IOS程序间互相调用，就是依靠URL scheme跳转的。进入TARGETS-&gt;info-&gt;URL types 添加scheme，“wb+app key”即可。</p>
+<p>接着添加URL scheme，iOS程序间互相调用，就是依靠URL scheme跳转的。进入TARGETS-&gt;info-&gt;URL types 添加scheme，“wb+app key”即可。</p>
 <p>把下载的SDK的libWeiboSDK文件夹加入项目，添加UIKit、Foudation、CoreGraphics这三个依赖包。参考着demo里的代码，如下操作</p>
 <p><pre class="lang:default decode:true">//微博相关</pre></p>
 <p>#define WB_APP_KEY      @”29615<strong>*</strong>“</p>

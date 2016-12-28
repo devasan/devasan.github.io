@@ -4,8 +4,62 @@
 
     
   <url>
+    <loc>http://devasan.com/2015/04/27/e4-bb-96-e5-b1-b1-e4-b9-8b-e7-9f-b3/</loc>
+    <lastmod>2016-12-28T06:31:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>他山之石</title>
+        <pubTime>2015-04-27T03:39:29.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="拾人牙慧" url="http://devasan.com/categories/%E6%8B%BE%E4%BA%BA%E7%89%99%E6%85%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/</loc>
+    <lastmod>2016-12-28T06:28:22.000Z</lastmod>
+    <data>
+        <display>
+        <title>集成新浪微博</title>
+        <pubTime>2014-11-04T13:12:49.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2014/11/03/e5-86-99-e5-9c-a8-e4-b8-80-e5-91-a8-e5-b9-b4/</loc>
+    <lastmod>2016-12-28T06:27:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>写在一周年</title>
+        <pubTime>2014-11-03T13:56:31.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="三言两语" url="http://devasan.com/categories/%E4%B8%89%E8%A8%80%E4%B8%A4%E8%AF%AD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://devasan.com/2016/11/28/%E6%9C%89%E6%84%9F%E8%80%8C%E5%8F%91/</loc>
-    <lastmod>2016-11-28T08:50:09.000Z</lastmod>
+    <lastmod>2016-11-28T08:55:44.000Z</lastmod>
     <data>
         <display>
         <title>WeTest</title>
@@ -116,107 +170,17 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/12/07/e5-8a-a8-e6-80-81-e8-ae-a1-e7-ae-97cell-e9-ab-98-e5-ba-a6/</loc>
+    <loc>http://devasan.com/2014/10/28/hello-world-1/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>动态计算Cell高度</title>
-        <pubTime>2014-12-07T14:42:45.000Z</pubTime>
+        <title>世界，你好！</title>
+        <pubTime>2014-10-28T00:56:56.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2015/05/28/e8-ae-a1-e7-ae-97-e8-bf-90-e7-94-a8autolayout-e5-b8-83-e5-b1-80-e7-9a-84uilabel-e7-9a-84-e9-ab-98-e5-ba-a6-e5-87-ba-e7-8e-b0-e7-9a-84-e9-97-ae-e9-a2-98/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>计算运用autolayout布局的UILabel的高度出现的问题</title>
-        <pubTime>2015-05-28T07:40:31.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2014/11/20/e8-87-aa-e5-ae-9a-e4-b9-89-e7-9a-84tableviewcell/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>自定义的tableViewCell</title>
-        <pubTime>2014-11-20T13:08:53.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2014/12/29/e9-85-8d-e7-bd-aepodspec-e6-96-87-e4-bb-b6/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>配置Podspec文件</title>
-        <pubTime>2014-12-29T15:11:50.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="拾人牙慧" url="http://devasan.com/categories/%E6%8B%BE%E4%BA%BA%E7%89%99%E6%85%A7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2015/04/27/e4-bb-96-e5-b1-b1-e4-b9-8b-e7-9f-b3/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>他山之石</title>
-        <pubTime>2015-04-27T03:39:29.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="拾人牙慧" url="http://devasan.com/categories/%E6%8B%BE%E4%BA%BA%E7%89%99%E6%85%A7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2015/06/08/e7-bb-9f-e8-ae-a1-e6-97-b6-e8-8e-b7-e5-8f-96-e8-ae-be-e5-a4-87ip-e5-9c-b0-e5-9d-80/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>统计时获取设备IP地址</title>
-        <pubTime>2015-06-08T08:44:50.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+              <breadCrumb title="三言两语" url="http://devasan.com/categories/%E4%B8%89%E8%A8%80%E4%B8%A4%E8%AF%AD/"/>
           
         </display>
     </data>
@@ -242,6 +206,24 @@
 
     
   <url>
+    <loc>http://devasan.com/2014/12/29/e9-85-8d-e7-bd-aepodspec-e6-96-87-e4-bb-b6/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>配置Podspec文件</title>
+        <pubTime>2014-12-29T15:11:50.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="拾人牙慧" url="http://devasan.com/categories/%E6%8B%BE%E4%BA%BA%E7%89%99%E6%85%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://devasan.com/2014/12/18/e8-ae-b0uigesturerecognizer-e9-81-87-e5-88-b0-e7-9a-84-e5-9d-91/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
@@ -253,24 +235,6 @@
            
              
               <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2014/10/28/hello-world-1/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>世界，你好！</title>
-        <pubTime>2014-10-28T00:56:56.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="三言两语" url="http://devasan.com/categories/%E4%B8%89%E8%A8%80%E4%B8%A4%E8%AF%AD/"/>
           
         </display>
     </data>
@@ -296,42 +260,6 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/11/27/html/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>Coretext-HTML学习使用</title>
-        <pubTime>2014-11-27T09:25:31.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2014/11/04/e9-9b-86-e6-88-90-e6-96-b0-e6-b5-aa-e5-be-ae-e5-8d-9a/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>集成新浪微博</title>
-        <pubTime>2014-11-04T13:12:49.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://devasan.com/2014/10/30/e5-85-b3-e4-ba-8excode6-e7-9a-84-e4-b8-80-e4-ba-9b-e8-ae-b0-e4-ba-8b/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
@@ -350,17 +278,53 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/11/03/e5-86-99-e5-9c-a8-e4-b8-80-e5-91-a8-e5-b9-b4/</loc>
+    <loc>http://devasan.com/2015/03/13/cocoapod-header-file-not-found/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>写在一周年</title>
-        <pubTime>2014-11-03T13:56:31.000Z</pubTime>
+        <title>CocoaPod header file not found</title>
+        <pubTime>2015-03-13T03:02:50.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="三言两语" url="http://devasan.com/categories/%E4%B8%89%E8%A8%80%E4%B8%A4%E8%AF%AD/"/>
+              <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2014/12/07/e5-8a-a8-e6-80-81-e8-ae-a1-e7-ae-97cell-e9-ab-98-e5-ba-a6/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>动态计算Cell高度</title>
+        <pubTime>2014-12-07T14:42:45.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2014/11/27/html/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>Coretext-HTML学习使用</title>
+        <pubTime>2014-11-27T09:25:31.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
           
         </display>
     </data>
@@ -386,12 +350,12 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/11/06/jsonmodel-e7-9a-84-e5-ad-a6-e4-b9-a0-e4-bd-bf-e7-94-a8/</loc>
+    <loc>http://devasan.com/2014/11/07/model-e9-87-8d-e6-9e-84-e8-ae-b0-e4-ba-8b/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>JSONModel的学习使用</title>
-        <pubTime>2014-11-06T05:18:21.000Z</pubTime>
+        <title>Model重构记事</title>
+        <pubTime>2014-11-07T08:34:59.000Z</pubTime>
         
          
            
@@ -404,12 +368,12 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/11/07/model-e9-87-8d-e6-9e-84-e8-ae-b0-e4-ba-8b/</loc>
+    <loc>http://devasan.com/2014/12/26/nsuserdefaults-e9-81-87-e4-b8-8anull-value/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>Model重构记事</title>
-        <pubTime>2014-11-07T08:34:59.000Z</pubTime>
+        <title>当NSUserDefaults遇上NUll Value</title>
+        <pubTime>2014-12-26T15:50:55.000Z</pubTime>
         
          
            
@@ -440,12 +404,48 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/12/26/nsuserdefaults-e9-81-87-e4-b8-8anull-value/</loc>
+    <loc>http://devasan.com/2015/06/08/e7-bb-9f-e8-ae-a1-e6-97-b6-e8-8e-b7-e5-8f-96-e8-ae-be-e5-a4-87ip-e5-9c-b0-e5-9d-80/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>当NSUserDefaults遇上NUll Value</title>
-        <pubTime>2014-12-26T15:50:55.000Z</pubTime>
+        <title>统计时获取设备IP地址</title>
+        <pubTime>2015-06-08T08:44:50.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2014/11/20/e8-87-aa-e5-ae-9a-e4-b9-89-e7-9a-84tableviewcell/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>自定义的tableViewCell</title>
+        <pubTime>2014-11-20T13:08:53.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2014/11/06/jsonmodel-e7-9a-84-e5-ad-a6-e4-b9-a0-e4-bd-bf-e7-94-a8/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>JSONModel的学习使用</title>
+        <pubTime>2014-11-06T05:18:21.000Z</pubTime>
         
          
            
@@ -476,12 +476,12 @@
 
     
   <url>
-    <loc>http://devasan.com/2015/03/13/cocoapod-header-file-not-found/</loc>
+    <loc>http://devasan.com/2015/05/28/e8-ae-a1-e7-ae-97-e8-bf-90-e7-94-a8autolayout-e5-b8-83-e5-b1-80-e7-9a-84uilabel-e7-9a-84-e9-ab-98-e5-ba-a6-e5-87-ba-e7-8e-b0-e7-9a-84-e9-97-ae-e9-a2-98/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>CocoaPod header file not found</title>
-        <pubTime>2015-03-13T03:02:50.000Z</pubTime>
+        <title>计算运用autolayout布局的UILabel的高度出现的问题</title>
+        <pubTime>2015-05-28T07:40:31.000Z</pubTime>
         
          
            
