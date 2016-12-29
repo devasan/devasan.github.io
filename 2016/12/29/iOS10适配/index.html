@@ -85,24 +85,24 @@
 
 
 <meta name="description" content="iOS10发布已经挺久了，这里记录一下本次APP发布过程中遇到的一些比较重要的适配事项，或者说是必须要适配的事项，还有一些API的更新，因为开发过程中要兼容较低的版本，就不罗列出来了。
-1. Privacy-Sensitive Data打包上传到iTunes Connect过程中遇到的一次错误提示
+Privacy-Sensitive Data打包上传到iTunes Connect过程中遇到的一次错误提示
 
-This app attempts to access privacy-sensitive dat">
+This app attempts to access privacy-sensitive data w">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS10适配">
 <meta property="og:url" content="http://devasan.com/2016/12/29/iOS10适配/index.html">
 <meta property="og:site_name" content="多情的阿三">
 <meta property="og:description" content="iOS10发布已经挺久了，这里记录一下本次APP发布过程中遇到的一些比较重要的适配事项，或者说是必须要适配的事项，还有一些API的更新，因为开发过程中要兼容较低的版本，就不罗列出来了。
-1. Privacy-Sensitive Data打包上传到iTunes Connect过程中遇到的一次错误提示
+Privacy-Sensitive Data打包上传到iTunes Connect过程中遇到的一次错误提示
 
-This app attempts to access privacy-sensitive dat">
-<meta property="og:updated_time" content="2016-12-29T02:12:49.000Z">
+This app attempts to access privacy-sensitive data w">
+<meta property="og:updated_time" content="2016-12-29T03:07:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS10适配">
 <meta name="twitter:description" content="iOS10发布已经挺久了，这里记录一下本次APP发布过程中遇到的一些比较重要的适配事项，或者说是必须要适配的事项，还有一些API的更新，因为开发过程中要兼容较低的版本，就不罗列出来了。
-1. Privacy-Sensitive Data打包上传到iTunes Connect过程中遇到的一次错误提示
+Privacy-Sensitive Data打包上传到iTunes Connect过程中遇到的一次错误提示
 
-This app attempts to access privacy-sensitive dat">
+This app attempts to access privacy-sensitive data w">
 
 
 
@@ -314,12 +314,12 @@ This app attempts to access privacy-sensitive dat">
 
       
         <p>iOS10发布已经挺久了，这里记录一下本次APP发布过程中遇到的一些比较重要的适配事项，或者说是必须要适配的事项，还有一些API的更新，因为开发过程中要兼容较低的版本，就不罗列出来了。</p>
-<h2 id="1-Privacy-Sensitive-Data"><a href="#1-Privacy-Sensitive-Data" class="headerlink" title="1. Privacy-Sensitive Data"></a>1. Privacy-Sensitive Data</h2><p>打包上传到iTunes Connect过程中遇到的一次错误提示</p>
+<h2 id="Privacy-Sensitive-Data"><a href="#Privacy-Sensitive-Data" class="headerlink" title="Privacy-Sensitive Data"></a>Privacy-Sensitive Data</h2><p>打包上传到iTunes Connect过程中遇到的一次错误提示</p>
 <blockquote>
 <p>This app attempts to access privacy-sensitive data without a usage description. The app’s Info.plist must contain an NSMicrophoneUsageDescription key with a string value explaining to the user how the app uses this data. </p>
 </blockquote>
 <p>解决的方法很简单，在Target-Info添加<code>Privacy - Microphone Usage Description</code>说明即可。其他需要访问隐私数据的（比如：<code>Privacy - Camera Usage Description</code>、<code>Privacy - Photo Library Usage Description</code>、<code>Privacy - Contacts Usage Description</code>还有位置、蓝牙、日历、健康、提示事项等就不一一列举了）都必须在<code>info.plist</code>里添加相关属性。</p>
-<h2 id="2-ATS"><a href="#2-ATS" class="headerlink" title="2. ATS"></a>2. ATS</h2><p>本来WWDC中宣布2017年1月1日起所有开发应用必须升级成HTTPS(特殊情况可以和Apple沟通),现在推迟了截止时间，下面是Apple给出的<a href="https://developer.apple.com/news/?id=12212016b" target="_blank" rel="external">新闻</a>。</p>
+<h2 id="ATS"><a href="#ATS" class="headerlink" title="ATS"></a>ATS</h2><p>本来WWDC中宣布2017年1月1日起所有开发应用必须升级成HTTPS(特殊情况可以和Apple沟通),现在推迟了截止时间，下面是Apple给出的<a href="https://developer.apple.com/news/?id=12212016b" target="_blank" rel="external">新闻</a>。</p>
 <blockquote>
 <blockquote>
 <p><strong>Supporting App Transport Security</strong><br>    <em>December 21, 2016</em></p>
@@ -327,7 +327,7 @@ This app attempts to access privacy-sensitive dat">
 <p>App Transport Security (ATS), introduced in iOS 9 and OS X v10.11,<br>improves user security and privacy by requiring apps to use secure<br>network connections over HTTPS. At WWDC 2016 we announced that apps<br>submitted to the App Store will be required to support ATS at the end<br>of the year. To give you additional time to prepare, this deadline has<br>been extended and we will provide another update when a new deadline<br>is confirmed. Learn more about ATS.</p>
 </blockquote>
 <p>在iOS9的时候，就默认禁止非HTTPS的网络访问。需要我们在<code>info.plist</code>里添加<code>App Transport Security Settings</code>字典，将<code>Allow Arbitrary Loads</code>设置成<code>YES</code>，在<code>Exception Domains</code>添加域名访问白名单。</p>
-<h2 id="3-UserNotifications"><a href="#3-UserNotifications" class="headerlink" title="3. UserNotifications"></a>3. UserNotifications</h2><p><code>#import &lt;UserNotifications/UserNotifications.h&gt;</code><br>现在的通知有了状态的回调，推送发出后，会得到一个response以及error，可以根据回调返回的状态处理不同的状况。</p>
+<h2 id="UserNotifications"><a href="#UserNotifications" class="headerlink" title="UserNotifications"></a>UserNotifications</h2><p><code>#import &lt;UserNotifications/UserNotifications.h&gt;</code><br>现在的通知有了状态的回调，推送发出后，会得到一个response以及error，可以根据回调返回的状态处理不同的状况。</p>
 <p>若有补充，以后继续添加完善。</p>
 
       
@@ -547,7 +547,7 @@ This app attempts to access privacy-sensitive dat">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Privacy-Sensitive-Data"><span class="nav-number">1.</span> <span class="nav-text">1. Privacy-Sensitive Data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-ATS"><span class="nav-number">2.</span> <span class="nav-text">2. ATS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-UserNotifications"><span class="nav-number">3.</span> <span class="nav-text">3. UserNotifications</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Privacy-Sensitive-Data"><span class="nav-number">1.</span> <span class="nav-text">Privacy-Sensitive Data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ATS"><span class="nav-number">2.</span> <span class="nav-text">ATS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UserNotifications"><span class="nav-number">3.</span> <span class="nav-text">UserNotifications</span></a></li></ol></div>
             
           </div>
         </section>
