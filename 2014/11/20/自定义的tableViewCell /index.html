@@ -1,0 +1,833 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="过了刚开始的那三分钟热度，对博客似乎没有了什么心思。懒病也犯了，直接贴上代码仅作学习记录。
+////  ASSendPhotoCell.h//  APP////  Created by asan on 14/11/19.//  Copyright (c) 2014年 asan. All rights reserved.//
+#import &amp;lt;UIKit/UIKit.h&amp;gt;
+#import">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自定义的tableViewCell">
+<meta property="og:url" content="http://devasan.com/2014/11/20/自定义的tableViewCell /index.html">
+<meta property="og:site_name" content="多情的阿三">
+<meta property="og:description" content="过了刚开始的那三分钟热度，对博客似乎没有了什么心思。懒病也犯了，直接贴上代码仅作学习记录。
+////  ASSendPhotoCell.h//  APP////  Created by asan on 14/11/19.//  Copyright (c) 2014年 asan. All rights reserved.//
+#import &amp;lt;UIKit/UIKit.h&amp;gt;
+#import">
+<meta property="og:updated_time" content="2016-11-01T13:44:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="自定义的tableViewCell">
+<meta name="twitter:description" content="过了刚开始的那三分钟热度，对博客似乎没有了什么心思。懒病也犯了，直接贴上代码仅作学习记录。
+////  ASSendPhotoCell.h//  APP////  Created by asan on 14/11/19.//  Copyright (c) 2014年 asan. All rights reserved.//
+#import &amp;lt;UIKit/UIKit.h&amp;gt;
+#import">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6347984835507652000',
+      author: '多情的阿三'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://devasan.com/2014/11/20/自定义的tableViewCell /"/>
+
+
+  <title> 自定义的tableViewCell | 多情的阿三 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">多情的阿三</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                自定义的tableViewCell
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2014-11-20T21:08:53+08:00" content="2014-11-20">
+              2014-11-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学无止境/" itemprop="url" rel="index">
+                    <span itemprop="name">学无止境</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2014/11/20/自定义的tableViewCell /#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2014/11/20/自定义的tableViewCell /" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>过了刚开始的那三分钟热度，对博客似乎没有了什么心思。懒病也犯了，直接贴上代码仅作学习记录。</p>
+<p><pre class="lang:default decode:true">//<br>//  ASSendPhotoCell.h<br>//  APP<br>//<br>//  Created by asan on 14/11/19.<br>//  Copyright (c) 2014年 asan. All rights reserved.<br>//</pre></p>
+<p>#import &lt;UIKit/UIKit.h&gt;</p>
+<p>#import “ASJsonFriendListModel.h”</p>
+<p>#import “ASJsonNearbyModel.h”</p>
+<p>typedef NS_ENUM(NSInteger, ASSendPhotoType) {</p>
+<pre><code>ASSendPhotoNearby = 0,
+ASSendPhotoFriend,
+ASSendPhotoNearbyAll,
+ASSendPhotoFriendAll
+</code></pre><p>};</p>
+<p>@interface ASSendPhotoCell : UITableViewCell</p>
+<p>{<br>    <strong>weak IBOutlet UIImageView *avatar;
+    </strong>weak IBOutlet UILabel <em>name;<br>    __weak IBOutlet UILabel </em>about;<br>    __weak IBOutlet UIButton *checkBox;</p>
+<pre><code>__weak IBOutlet UIView *friendView;
+__weak IBOutlet UIImageView *gender;
+__weak IBOutlet UILabel *distance;
+</code></pre><p>}</p>
+<p>@property (copy,nonatomic) NSString *imageName;</p>
+<ul>
+<li>(ASSendPhotoCell *)cellfromXibWithType:(ASSendPhotoType)type;</li>
+</ul>
+<ul>
+<li>(void)loadCellWithData:(id)data byType:(ASSendPhotoType)type;<br>@end<br><br>&nbsp;<br><pre class="lang:default decode:true">//<br>//  ASSendPhotoCell.m<br>//  APP<br>//<br>//  Created by asan on 14/11/19.<br>//  Copyright (c) 2014年 asan. All rights reserved.<br>//</pre></li>
+</ul>
+<p>#import “ASSendPhotoCell.h”</p>
+<p>@implementation ASSendPhotoCell</p>
+<ul>
+<li><p>(void)awakeFromNib {<br>  // Initialization code<br>}</p>
+</li>
+<li><p>(void)setSelected:(BOOL)selected animated:(BOOL)animated {<br>  [super setSelected:selected animated:animated];<br>  // Configure the view for the selected state<br>}</p>
+</li>
+<li><p>(void)setImageName:(NSString *)imageName<br>{<br>  [checkBox setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];<br>}</p>
+</li>
+</ul>
+<ul>
+<li>(ASSendPhotoCell <em>)cellfromXibWithType:(ASSendPhotoType)type<br>{<br>  NSArray </em>nibs = [[NSBundle mainBundle] loadNibNamed:@”ASSendPhotoCell” owner:nil options:nil];<br>  for (id v in nibs) {<pre><code>if ([v isKindOfClass:[ASSendPhotoCell class]]) {
+    ASSendPhotoCell *cell = (ASSendPhotoCell *)v;
+    [cell setUpSubviews:type];
+    [cell setUpFonts];
+    return cell;
+}
+</code></pre>  }<br>  return nil;</li>
+</ul>
+<p>}</p>
+<ul>
+<li>(void)setUpSubviews:(ASSendPhotoType)type<br>{<br>  if (type == ASSendPhotoNearby) {<pre><code>about.hidden = YES;
+friendView.hidden = NO;
+</code></pre>  }else {<pre><code>friendView.hidden = YES;
+about.hidden = NO;
+</code></pre>  }<br>  avatar.layer.cornerRadius = avatar.height * 0.5;<br>  avatar.clipsToBounds = YES;<br>}</li>
+<li>(void)setUpFonts<br>{</li>
+</ul>
+<p>}</p>
+<ul>
+<li>(void)loadCellWithData:(id)data byType:(ASSendPhotoType)type<br>{<br>  if (type == ASSendPhotoNearby) {<pre><code>ASJsonNearbyModelData *_data = (ASJsonNearbyModelData *)data;
+[self loadAvatar:_data.avatar];
+[self loadName:_data.name];
+[self loadNearby:_data.gender age:_data.age distance:_data.distance];
+</code></pre>  }else if (type == ASSendPhotoFriend){<pre><code>ASJsonFriendListData *_data = (ASJsonFriendListData *)data;
+[self loadAvatar:_data.avatar];
+[self loadName:_data.name];
+[self loadAbout:_data.about];
+</code></pre>  }else if (type == ASSendPhotoNearbyAll){<pre><code>avatar.image = [UIImage imageNamed:@&quot;AvatarPlaceholder&quot;];
+[self loadAbout:@&quot;...&quot;];
+[self loadName:@&quot;附近好友&quot;];
+</code></pre>  }else if (type == ASSendPhotoFriendAll){<pre><code>avatar.image = [UIImage imageNamed:@&quot;AvatarPlaceholder&quot;];
+[self loadAbout:@&quot;...&quot;];
+[self loadName:@&quot;全部好友&quot;];
+</code></pre>  }</li>
+</ul>
+<p>}</p>
+<ul>
+<li>(void)loadAvatar:(NSString *)url<br>{<br>  if (!url) {<pre><code>return;
+</code></pre>  }<br>  [avatar sd_setImageWithURL:[NSURL URLWithString:[PATH_HOST stringByAppendingString:url]]];<br>}</li>
+<li>(void)loadName:(NSString *)string<br>{<br>  if (!string) {<pre><code>return;
+</code></pre>  }<br>  name.text = string;<br>}</li>
+<li><p>(void)loadAbout:(NSString *)string<br>{<br>  if (!string) {</p>
+<pre><code>return;
+</code></pre><p>  }<br>  about.text = [string isEqualToString:@””]?@”这个人很懒，介绍都没有”:string;<br>}</p>
+</li>
+<li><p>(void)loadNearby:(NSString <em>)_gender age:(NSString </em>)_age distance:(NSString *)_distance<br>{<br>  if (!_gender ||!_age ||_distance) {</p>
+<pre><code>return;
+</code></pre><p>  }<br>  //性别<br>  NSString *sex = nil;<br>  if ([_gender integerValue] == 1) {</p>
+<pre><code>sex = @&quot;man-small&quot;;
+</code></pre><p>  }else if([_gender integerValue] == 0){</p>
+<pre><code>sex = @&quot;woman-small&quot;;
+</code></pre><p>  }<br>  gender.image = [UIImage imageNamed:sex];</p>
+<p>  NSString <em>ages = [NSString stringWithFormat:@”%@岁 | “,_age];<br>  NSString </em>distances = [NSString stringWithFormat:@”%.1fkm”,[_distance floatValue]/1000];<br>  distance.text = [NSString stringWithFormat:@”%@%@”,ages,distances];<br>}<br>@end<br><br><pre class="lang:default decode:true">- (UITableViewCell <em>)tableView:(UITableView </em>)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath<br>{<br>  //…示例<br>  if (indexPath.section == 0) {</pre></p>
+<pre><code>ASSendPhotoCell *cell = [ASSendPhotoCell cellfromXibWithType:ASSendPhotoFriendAll];
+[cell loadCellWithData:nil byType:ASSendPhotoFriendAll];
+[self cell:cell selected:_bAllFriends];
+return cell;
+</code></pre><p>  }else{</p>
+<pre><code>ASSendPhotoCell *cell = [ASSendPhotoCell cellfromXibWithType:ASSendPhotoFriend];
+ASJsonFriendListData *data = _friendUsers[indexPath.row] ;
+[cell loadCellWithData:data byType:ASSendPhotoFriend];
+[self cell:cell selected:[_sFriendsList containsObject:data.paixinID]];
+return cell;
+</code></pre><p>  };<br>  return nil;<br>}<br>&nbsp;</p>
+</li>
+</ul>
+<p>以上是一个简单的自定义Cell，关于返回Cell的这个静态方法，最好还是要抽出来，写一个category，不然每次新建Cell都需要添加这个方法，略微累赘，我要向优雅的代码看齐~ 添加了autolayout约束条件，控制台打印出了一些提示信息。之前都是去除勾选的，所以最近才开始学习怎么使用autolayout，对于6plus的适配必须得上这个利器了，学会了这玩意，以后再多的屏幕尺寸也不虚了，想想就有点小鸡冻呢。</p>
+<p><strong>Unable to simultaneously satisfy constraints.</strong></p>
+<p><strong> Probably at least one of the constraints in the following list is one you don’t want. Try this: (1) look at each constraint and try to figure out which you don’t expect; (2) find the code that added the unwanted constraint or constraints and fix it. (Note: If you’re seeing NSAutoresizingMaskLayoutConstraints that you don’t understand, refer to the documentation for the UIView property translatesAutoresizingMaskIntoConstraints) </strong></p>
+<p><strong>(</strong></p>
+<p><strong>    “&lt;NSLayoutConstraint:0x7cc56280 V:[UILabel:0x7cca52c0’\U552f\U7f8e\U5b89\U5c0f\U7199’(21)]&gt;”,</strong></p>
+<p><strong>    “&lt;NSLayoutConstraint:0x7cc56460 V:[UILabel:0x7cca5380’Label’(21)]&gt;”,</strong></p>
+<p><strong>    “&lt;NSLayoutConstraint:0x7cca0a70 V:[UIImageView:0x7cca0990(1)]&gt;”,</strong></p>
+<p><strong>    “&lt;NSLayoutConstraint:0x7cc70b20 V:[UIImageView:0x7cca0990]-(0)-|   (Names: ‘|’:UITableViewCellContentView:0x7cc975d0 )&gt;”,</strong></p>
+<p><strong>    “&lt;NSLayoutConstraint:0x7cc70b50 V:|-(65)-[UIImageView:0x7cca0990]   (Names: ‘|’:UITableViewCellContentView:0x7cc975d0 )&gt;”,</strong></p>
+<p><strong>    “&lt;NSLayoutConstraint:0x7cc70be0 V:|-(10)-[UILabel:0x7cca52c0’\U552f\U7f8e\U5b89\U5c0f\U7199’]   (Names: ‘|’:UITableViewCellContentView:0x7cc975d0 )&gt;”,</strong></p>
+<p><strong>    “&lt;NSLayoutConstraint:0x7cc70c10 V:[UILabel:0x7cca52c0’\U552f\U7f8e\U5b89\U5c0f\U7199’]-(3)-[UILabel:0x7cca5380’Label’]&gt;”,</strong></p>
+<p><strong>    “&lt;NSLayoutConstraint:0x7cc70ca0 V:[UILabel:0x7cca5380’Label’]-(10.5)-|   (Names: ‘|’:UITableViewCellContentView:0x7cc975d0 )&gt;”</strong></p>
+<p><strong>)</strong></p>
+<p><strong>Will attempt to recover by breaking constraint </strong></p>
+<p><strong>&lt;NSLayoutConstraint:0x7cc56460 V:[UILabel:0x7cca5380’Label’(21)]&gt;</strong></p>
+<p><strong>Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.</strong></p>
+<p><strong>The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in &lt;UIKit/UIView.h&gt; may also be helpful.</strong></p>
+<p>此处警告为autolayout约束条件冲突打印台警告，去除约束，重新添加合适的约束即可。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>求鼓励，求支持！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat_rewards.png" alt="devasan WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/11/07/Model重构记事/" rel="next" title="Model重构记事">
+                <i class="fa fa-chevron-left"></i> Model重构记事
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2014/11/27/Coretext-HTML学习使用/" rel="prev" title="Coretext-HTML学习使用">
+                Coretext-HTML学习使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2014/11/20/自定义的tableViewCell /"
+     data-title="自定义的tableViewCell"
+     data-content=""
+     data-url="http://devasan.com/2014/11/20/自定义的tableViewCell /">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2014/11/20/自定义的tableViewCell /"
+           data-title="自定义的tableViewCell" data-url="http://devasan.com/2014/11/20/自定义的tableViewCell /">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/devasan_avatar.png"
+               alt="devasan" />
+          <p class="site-author-name" itemprop="name">devasan</p>
+          <p class="site-description motion-element" itemprop="description">要多努力才能看起来毫不费力</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/devasan" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.ymonke.com/" title="ymonke" target="_blank">ymonke</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">devasan</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io" rel="external nofollow">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"devasan"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
