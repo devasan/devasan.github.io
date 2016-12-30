@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS," />
 
 
 
@@ -84,16 +84,34 @@
 
 
 
-<meta name="description" content="要多努力才能看起来毫不费力">
+<meta name="description" content="iOS开发已经习惯了使用CocoaPods对第三方库进行管理，最近接触了一个新的Cocoa依赖管理工具Carthage，下面就大致介绍一下我使用的一个过程。两者区别自己看，嚯嚯~
+安装打开终端，输入一哈指令
+$ brew update
+
+$ brew install carthage
+安装好以后输入$ carthage version查看当前的版本号，我当前的版本号是0.18.1。
+使用通过终端打">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Carthage">
 <meta property="og:url" content="http://devasan.com/2016/12/30/Carthage/index.html">
 <meta property="og:site_name" content="多情的阿三">
-<meta property="og:description" content="要多努力才能看起来毫不费力">
-<meta property="og:updated_time" content="2016-12-30T05:31:11.000Z">
+<meta property="og:description" content="iOS开发已经习惯了使用CocoaPods对第三方库进行管理，最近接触了一个新的Cocoa依赖管理工具Carthage，下面就大致介绍一下我使用的一个过程。两者区别自己看，嚯嚯~
+安装打开终端，输入一哈指令
+$ brew update
+
+$ brew install carthage
+安装好以后输入$ carthage version查看当前的版本号，我当前的版本号是0.18.1。
+使用通过终端打">
+<meta property="og:updated_time" content="2016-12-30T05:39:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Carthage">
-<meta name="twitter:description" content="要多努力才能看起来毫不费力">
+<meta name="twitter:description" content="iOS开发已经习惯了使用CocoaPods对第三方库进行管理，最近接触了一个新的Cocoa依赖管理工具Carthage，下面就大致介绍一下我使用的一个过程。两者区别自己看，嚯嚯~
+安装打开终端，输入一哈指令
+$ brew update
+
+$ brew install carthage
+安装好以后输入$ carthage version查看当前的版本号，我当前的版本号是0.18.1。
+使用通过终端打">
 
 
 
@@ -269,11 +287,30 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-30T13:31:11+08:00" content="2016-12-30">
+            <time itemprop="dateCreated" datetime="2016-12-30T12:56:02+08:00" content="2016-12-30">
               2016-12-30
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学无止境/" itemprop="url" rel="index">
+                    <span itemprop="name">学无止境</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -304,7 +341,39 @@
       
 
       
-        
+        <p>iOS开发已经习惯了使用<a href="https://cocoapods.org" target="_blank" rel="external">CocoaPods</a>对第三方库进行管理，最近接触了一个新的Cocoa依赖管理工具<a href="https://github.com/Carthage/Carthage" target="_blank" rel="external">Carthage</a>，下面就大致介绍一下我使用的一个过程。<a href="http://drekka.ghost.io/cocoapods-vs-carthage/" target="_blank" rel="external">两者区别自己看</a>，嚯嚯~</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>打开终端，输入一哈指令</p>
+<pre><code>$ brew update
+
+$ brew install carthage
+</code></pre><p>安装好以后输入<code>$ carthage version</code>查看当前的版本号，我当前的版本号是<code>0.18.1</code>。</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>通过终端打开项目所在路径</p>
+<pre><code>$ cd /Path/Project
+</code></pre><p>创建一个空的Carthage文件</p>
+<pre><code>$ touch Cartfile
+</code></pre><p>打开Carthage文件</p>
+<pre><code>$ open -a Xcode Cartfile
+</code></pre><p>在文件里输入以下内容</p>
+<pre><code>github &quot;AFNetworking/AFNetworking&quot;
+github &quot;SnapKit/Masonry&quot;
+github &quot;rs/SDWebImage&quot;
+github &quot;Mantle/Mantle&quot;
+</code></pre><p>保存Carthage文件，并执行一下命令</p>
+<pre><code>$ carthage update --platform iOS
+</code></pre><p>一一一一一一一一一一500年后一一一一一一一一一一<br>项目的文件夹中从此有了一个名为Carthage的文件夹,然后一层一层的剥开它的心，在 Project/Carthage/Build/iOS里会出现许多不可描述的文件，但是我还是一眼在人群中找到了xxx.framework文件 =。=<br>然后回到了远古时代添加framework的方法，打开项目，点击project，选择target, 再选择上方的General，将需要的framework文件拖到 Linked frameworks and Binaries内<br>再然后点击Build Phrase tab选项，添加相应的run script，shell下面输入</p>
+<pre><code>/usr/local/bin/carthage copy-frameworks
+</code></pre><p>input Files输入</p>
+<pre><code>$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework
+$(SRCROOT)/Carthage/Build/iOS/Mantle.framework
+$(SRCROOT)/Carthage/Build/iOS/WebImage.framework
+$(SRCROOT)/Carthage/Build/iOS/Masonry.framework
+</code></pre><p>好了，这就完了。</p>
+<p>再再然后，你需要<code>#import &lt;AFNetworking/AFNetworking.h&gt;</code>来引用它。</p>
+<h2 id="完"><a href="#完" class="headerlink" title="完"></a>完</h2><p>嚯嚯，这下真的完了。阿鸡毛，你学到了吗</p>
+<ul>
+<li><a href="http://dev.iachieved.it/iachievedit/using-carthage-with-alamofire/" target="_blank" rel="external">http://dev.iachieved.it/iachievedit/using-carthage-with-alamofire/</a></li>
+</ul>
+
       
     </div>
 
@@ -339,6 +408,12 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag">#iOS</a>
+          
+        </div>
       
 
       
@@ -516,7 +591,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完"><span class="nav-number">3.</span> <span class="nav-text">完</span></a></li></ol></div>
             
           </div>
         </section>
