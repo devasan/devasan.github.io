@@ -84,25 +84,34 @@
 
 
 
-<meta name="description" content="iOS10发布已经挺久了，这里记录一下本次APP发布过程中遇到的一些比较重要的适配事项，或者说是必须要适配的事项，还有一些API的更新，因为开发过程中要兼容较低的版本，就不罗列出来了。
-Privacy-Sensitive Data打包上传到iTunes Connect过程中遇到的一次错误提示
+<meta name="description" content="iOS开发已经习惯了使用CocoaPods对第三方库进行管理，最近接触了一个新的Cocoa依赖管理工具Carthage，下面就大致介绍一下我使用的一个过程。两者区别自己看，嚯嚯~
+安装打开终端，输入一哈指令
+$ brew update
 
-This app attempts to access privacy-sensitive data w">
+$ brew install carthage
+安装好以后输入$ carthage version查看当前的版本号，我当前的版本号是0.18.1。
+使用通过终端打">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iOS10适配">
-<meta property="og:url" content="http://devasan.com/2016/12/29/iOS10适配/index.html">
+<meta property="og:title" content="Carthage">
+<meta property="og:url" content="http://devasan.com/2016/12/30/Carthage学习使用/index.html">
 <meta property="og:site_name" content="多情的阿三">
-<meta property="og:description" content="iOS10发布已经挺久了，这里记录一下本次APP发布过程中遇到的一些比较重要的适配事项，或者说是必须要适配的事项，还有一些API的更新，因为开发过程中要兼容较低的版本，就不罗列出来了。
-Privacy-Sensitive Data打包上传到iTunes Connect过程中遇到的一次错误提示
+<meta property="og:description" content="iOS开发已经习惯了使用CocoaPods对第三方库进行管理，最近接触了一个新的Cocoa依赖管理工具Carthage，下面就大致介绍一下我使用的一个过程。两者区别自己看，嚯嚯~
+安装打开终端，输入一哈指令
+$ brew update
 
-This app attempts to access privacy-sensitive data w">
-<meta property="og:updated_time" content="2016-12-29T03:07:40.000Z">
+$ brew install carthage
+安装好以后输入$ carthage version查看当前的版本号，我当前的版本号是0.18.1。
+使用通过终端打">
+<meta property="og:updated_time" content="2016-12-30T05:42:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS10适配">
-<meta name="twitter:description" content="iOS10发布已经挺久了，这里记录一下本次APP发布过程中遇到的一些比较重要的适配事项，或者说是必须要适配的事项，还有一些API的更新，因为开发过程中要兼容较低的版本，就不罗列出来了。
-Privacy-Sensitive Data打包上传到iTunes Connect过程中遇到的一次错误提示
+<meta name="twitter:title" content="Carthage">
+<meta name="twitter:description" content="iOS开发已经习惯了使用CocoaPods对第三方库进行管理，最近接触了一个新的Cocoa依赖管理工具Carthage，下面就大致介绍一下我使用的一个过程。两者区别自己看，嚯嚯~
+安装打开终端，输入一哈指令
+$ brew update
 
-This app attempts to access privacy-sensitive data w">
+$ brew install carthage
+安装好以后输入$ carthage version查看当前的版本号，我当前的版本号是0.18.1。
+使用通过终端打">
 
 
 
@@ -123,10 +132,10 @@ This app attempts to access privacy-sensitive data w">
 
 
 
-  <link rel="canonical" href="http://devasan.com/2016/12/29/iOS10适配/"/>
+  <link rel="canonical" href="http://devasan.com/2016/12/30/Carthage学习使用/"/>
 
 
-  <title> iOS10适配 | 多情的阿三 </title>
+  <title> Carthage | 多情的阿三 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +275,7 @@ This app attempts to access privacy-sensitive data w">
             
             
               
-                iOS10适配
+                Carthage
               
             
           </h1>
@@ -278,19 +287,38 @@ This app attempts to access privacy-sensitive data w">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-29T09:18:02+08:00" content="2016-12-29">
-              2016-12-29
+            <time itemprop="dateCreated" datetime="2016-12-30T12:56:02+08:00" content="2016-12-30">
+              2016-12-30
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学无止境/" itemprop="url" rel="index">
+                    <span itemprop="name">学无止境</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/12/29/iOS10适配/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/29/iOS10适配/" itemprop="commentsCount"></span>
+                <a href="/2016/12/30/Carthage学习使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/30/Carthage学习使用/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -313,22 +341,38 @@ This app attempts to access privacy-sensitive data w">
       
 
       
-        <p>iOS10发布已经挺久了，这里记录一下本次APP发布过程中遇到的一些比较重要的适配事项，或者说是必须要适配的事项，还有一些API的更新，因为开发过程中要兼容较低的版本，就不罗列出来了。</p>
-<h2 id="Privacy-Sensitive-Data"><a href="#Privacy-Sensitive-Data" class="headerlink" title="Privacy-Sensitive Data"></a>Privacy-Sensitive Data</h2><p>打包上传到iTunes Connect过程中遇到的一次错误提示</p>
-<blockquote>
-<p>This app attempts to access privacy-sensitive data without a usage description. The app’s Info.plist must contain an NSMicrophoneUsageDescription key with a string value explaining to the user how the app uses this data. </p>
-</blockquote>
-<p>解决的方法很简单，在Target-Info添加<code>Privacy - Microphone Usage Description</code>说明即可。其他需要访问隐私数据的（比如：<code>Privacy - Camera Usage Description</code>、<code>Privacy - Photo Library Usage Description</code>、<code>Privacy - Contacts Usage Description</code>还有位置、蓝牙、日历、健康、提示事项等就不一一列举了）都必须在<code>info.plist</code>里添加相关属性。</p>
-<h2 id="ATS"><a href="#ATS" class="headerlink" title="ATS"></a>ATS</h2><p>本来WWDC中宣布2017年1月1日起所有开发应用必须升级成HTTPS(特殊情况可以和Apple沟通),现在推迟了截止时间，下面是Apple给出的<a href="https://developer.apple.com/news/?id=12212016b" target="_blank" rel="external">新闻</a>。</p>
-<blockquote>
-<blockquote>
-<p><strong>Supporting App Transport Security</strong><br>    <em>December 21, 2016</em></p>
-</blockquote>
-<p>App Transport Security (ATS), introduced in iOS 9 and OS X v10.11,<br>improves user security and privacy by requiring apps to use secure<br>network connections over HTTPS. At WWDC 2016 we announced that apps<br>submitted to the App Store will be required to support ATS at the end<br>of the year. To give you additional time to prepare, this deadline has<br>been extended and we will provide another update when a new deadline<br>is confirmed. Learn more about ATS.</p>
-</blockquote>
-<p>在iOS9的时候，就默认禁止非HTTPS的网络访问。需要我们在<code>info.plist</code>里添加<code>App Transport Security Settings</code>字典，将<code>Allow Arbitrary Loads</code>设置成<code>YES</code>，在<code>Exception Domains</code>添加域名访问白名单。</p>
-<h2 id="UserNotifications"><a href="#UserNotifications" class="headerlink" title="UserNotifications"></a>UserNotifications</h2><p><code>#import &lt;UserNotifications/UserNotifications.h&gt;</code><br>现在的通知有了状态的回调，推送发出后，会得到一个response以及error，可以根据回调返回的状态处理不同的状况。</p>
-<p>若有补充，以后继续添加完善。</p>
+        <p>iOS开发已经习惯了使用<a href="https://cocoapods.org" target="_blank" rel="external">CocoaPods</a>对第三方库进行管理，最近接触了一个新的Cocoa依赖管理工具<a href="https://github.com/Carthage/Carthage" target="_blank" rel="external">Carthage</a>，下面就大致介绍一下我使用的一个过程。<a href="http://drekka.ghost.io/cocoapods-vs-carthage/" target="_blank" rel="external">两者区别自己看</a>，嚯嚯~</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>打开终端，输入一哈指令</p>
+<pre><code>$ brew update
+
+$ brew install carthage
+</code></pre><p>安装好以后输入<code>$ carthage version</code>查看当前的版本号，我当前的版本号是<code>0.18.1</code>。</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>通过终端打开项目所在路径</p>
+<pre><code>$ cd /Path/Project
+</code></pre><p>创建一个空的Carthage文件</p>
+<pre><code>$ touch Cartfile
+</code></pre><p>打开Carthage文件</p>
+<pre><code>$ open -a Xcode Cartfile
+</code></pre><p>在文件里输入以下内容</p>
+<pre><code>github &quot;AFNetworking/AFNetworking&quot;
+github &quot;SnapKit/Masonry&quot;
+github &quot;rs/SDWebImage&quot;
+github &quot;Mantle/Mantle&quot;
+</code></pre><p>保存Carthage文件，并执行一下命令</p>
+<pre><code>$ carthage update --platform iOS
+</code></pre><p>一一一一一一一一一一500年后一一一一一一一一一一<br>项目的文件夹中从此有了一个名为Carthage的文件夹,然后一层一层的剥开它的心，在 Project/Carthage/Build/iOS里会出现许多不可描述的文件，但是我还是一眼在人群中找到了xxx.framework文件 =。=<br>然后回到了远古时代添加framework的方法，打开项目，点击project，选择target, 再选择上方的General，将需要的framework文件拖到 Linked frameworks and Binaries内<br>再然后点击Build Phrase tab选项，添加相应的run script，shell下面输入</p>
+<pre><code>/usr/local/bin/carthage copy-frameworks
+</code></pre><p>input Files输入</p>
+<pre><code>$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework
+$(SRCROOT)/Carthage/Build/iOS/Mantle.framework
+$(SRCROOT)/Carthage/Build/iOS/WebImage.framework
+$(SRCROOT)/Carthage/Build/iOS/Masonry.framework
+</code></pre><p>好了，这就完了。</p>
+<p>再再然后，你需要<code>#import &lt;AFNetworking/AFNetworking.h&gt;</code>来引用它。</p>
+<h2 id="完"><a href="#完" class="headerlink" title="完"></a>完</h2><p>嚯嚯，这下真的完了。阿鸡毛，你学到了吗</p>
+<ul>
+<li><a href="http://dev.iachieved.it/iachievedit/using-carthage-with-alamofire/" target="_blank" rel="external">http://dev.iachieved.it/iachievedit/using-carthage-with-alamofire/</a></li>
+</ul>
 
       
     </div>
@@ -376,17 +420,13 @@ This app attempts to access privacy-sensitive data w">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/28/weTestAndHexo/" rel="next" title="WeTest和hexo常用命令">
-                <i class="fa fa-chevron-left"></i> WeTest和hexo常用命令
+              <a href="/2016/12/29/iOS10适配/" rel="next" title="iOS10适配">
+                <i class="fa fa-chevron-left"></i> iOS10适配
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/30/Carthage学习使用/" rel="prev" title="Carthage">
-                Carthage <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -401,10 +441,10 @@ This app attempts to access privacy-sensitive data w">
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/12/29/iOS10适配/"
-     data-title="iOS10适配"
+        <div class="ds-share flat" data-thread-key="2016/12/30/Carthage学习使用/"
+     data-title="Carthage"
      data-content=""
-     data-url="http://devasan.com/2016/12/29/iOS10适配/">
+     data-url="http://devasan.com/2016/12/30/Carthage学习使用/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -434,8 +474,8 @@ This app attempts to access privacy-sensitive data w">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/29/iOS10适配/"
-           data-title="iOS10适配" data-url="http://devasan.com/2016/12/29/iOS10适配/">
+      <div class="ds-thread" data-thread-key="2016/12/30/Carthage学习使用/"
+           data-title="Carthage" data-url="http://devasan.com/2016/12/30/Carthage学习使用/">
       </div>
     
   </div>
@@ -551,7 +591,7 @@ This app attempts to access privacy-sensitive data w">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Privacy-Sensitive-Data"><span class="nav-number">1.</span> <span class="nav-text">Privacy-Sensitive Data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ATS"><span class="nav-number">2.</span> <span class="nav-text">ATS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UserNotifications"><span class="nav-number">3.</span> <span class="nav-text">UserNotifications</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完"><span class="nav-number">3.</span> <span class="nav-text">完</span></a></li></ol></div>
             
           </div>
         </section>
