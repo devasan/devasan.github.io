@@ -241,12 +241,12 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/11/27/Coretext-HTML%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8/</loc>
+    <loc>http://devasan.com/2014/11/07/Model%E9%87%8D%E6%9E%84%E8%AE%B0%E4%BA%8B/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>Coretext-HTML学习使用</title>
-        <pubTime>2014-11-27T09:25:31.000Z</pubTime>
+        <title>Model重构记事</title>
+        <pubTime>2014-11-07T08:34:59.000Z</pubTime>
         
          
            
@@ -259,12 +259,12 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/11/07/Model%E9%87%8D%E6%9E%84%E8%AE%B0%E4%BA%8B/</loc>
+    <loc>http://devasan.com/2014/11/27/Coretext-HTML%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>Model重构记事</title>
-        <pubTime>2014-11-07T08:34:59.000Z</pubTime>
+        <title>Coretext-HTML学习使用</title>
+        <pubTime>2014-11-27T09:25:31.000Z</pubTime>
         
          
            
@@ -367,24 +367,6 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/11/20/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84tableViewCell%20/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>自定义的tableViewCell</title>
-        <pubTime>2014-11-20T13:08:53.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://devasan.com/2015/05/28/%E8%AE%A1%E7%AE%97%E8%BF%90%E7%94%A8autolayout%E5%B8%83%E5%B1%80%E7%9A%84UILabel%E7%9A%84%E9%AB%98%E5%BA%A6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
@@ -396,24 +378,6 @@
            
              
               <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2014/12/18/%E8%AE%B0UIGestureRecognizer%E5%92%8CUITableviewCell%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>记UIGestureRecognizer和UITableviewCell遇到的坑</title>
-        <pubTime>2014-12-18T02:48:12.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
           
         </display>
     </data>
@@ -457,6 +421,42 @@
 
     
   <url>
+    <loc>http://devasan.com/2015/03/05/umeng%E6%8A%A5%E9%94%99%E5%AE%9A%E4%BD%8D/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>umeng报错定位</title>
+        <pubTime>2015-03-05T07:34:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2014/12/18/%E8%AE%B0UIGestureRecognizer%E5%92%8CUITableviewCell%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>记UIGestureRecognizer和UITableviewCell遇到的坑</title>
+        <pubTime>2014-12-18T02:48:12.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://devasan.com/2015/03/13/cocoapod-header-file-not-found/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
@@ -475,12 +475,12 @@
 
     
   <url>
-    <loc>http://devasan.com/2015/03/05/umeng%E6%8A%A5%E9%94%99%E5%AE%9A%E4%BD%8D/</loc>
+    <loc>http://devasan.com/2014/11/20/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84tableViewCell%20/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>umeng报错定位</title>
-        <pubTime>2015-03-05T07:34:33.000Z</pubTime>
+        <title>自定义的tableViewCell</title>
+        <pubTime>2014-11-20T13:08:53.000Z</pubTime>
         
          
            
