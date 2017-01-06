@@ -243,42 +243,6 @@
 
     
   <url>
-    <loc>http://devasan.com/2015/03/13/Cocoapod-header-file-not-found/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>CocoaPod header file not found</title>
-        <pubTime>2015-03-13T03:02:50.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2015/01/26/UISearchBar%E5%9C%A8iPhone6%E4%B8%8A%E7%9A%84%E6%80%AA%E5%BC%82%E8%A1%A8%E7%8E%B0/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>UISearchBar在iPhone6上的怪异表现</title>
-        <pubTime>2015-01-26T05:59:36.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://devasan.com/2014/10/30/%E5%85%B3%E4%BA%8EXcode6%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%B0%E4%BA%8B/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
@@ -297,12 +261,66 @@
 
     
   <url>
+    <loc>http://devasan.com/2014/10/28/hello-world-WordPress/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>世界，你好！</title>
+        <pubTime>2014-10-28T00:56:56.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="三言两语" url="http://devasan.com/categories/%E4%B8%89%E8%A8%80%E4%B8%A4%E8%AF%AD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://devasan.com/2014/11/27/Coretext-HTML%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
         <title>Coretext-HTML学习使用</title>
         <pubTime>2014-11-27T09:25:31.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2015/03/13/Cocoapod-header-file-not-found/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>CocoaPod header file not found</title>
+        <pubTime>2015-03-13T03:02:50.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://devasan.com/2014/11/07/Model%E9%87%8D%E6%9E%84%E8%AE%B0%E4%BA%8B/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>Model重构记事</title>
+        <pubTime>2014-11-07T08:34:59.000Z</pubTime>
         
          
            
@@ -369,6 +387,24 @@
 
     
   <url>
+    <loc>http://devasan.com/2014/11/20/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84tableViewCell%20/</loc>
+    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>自定义的tableViewCell</title>
+        <pubTime>2014-11-20T13:08:53.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://devasan.com/2015/05/28/%E8%AE%A1%E7%AE%97%E8%BF%90%E7%94%A8autolayout%E5%B8%83%E5%B1%80%E7%9A%84UILabel%E7%9A%84%E9%AB%98%E5%BA%A6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
@@ -387,12 +423,12 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/11/20/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84tableViewCell%20/</loc>
+    <loc>http://devasan.com/2014/12/18/%E8%AE%B0UIGestureRecognizer%E5%92%8CUITableviewCell%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>自定义的tableViewCell</title>
-        <pubTime>2014-11-20T13:08:53.000Z</pubTime>
+        <title>记UIGestureRecognizer和UITableviewCell遇到的坑</title>
+        <pubTime>2014-12-18T02:48:12.000Z</pubTime>
         
          
            
@@ -423,17 +459,17 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/12/18/%E8%AE%B0UIGestureRecognizer%E5%92%8CUITableviewCell%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</loc>
+    <loc>http://devasan.com/2014/12/29/%E9%85%8D%E7%BD%AEPodspec%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>记UIGestureRecognizer和UITableviewCell遇到的坑</title>
-        <pubTime>2014-12-18T02:48:12.000Z</pubTime>
+        <title>配置Podspec文件</title>
+        <pubTime>2014-12-29T15:11:50.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+              <breadCrumb title="拾人牙慧" url="http://devasan.com/categories/%E6%8B%BE%E4%BA%BA%E7%89%99%E6%85%A7/"/>
           
         </display>
     </data>
@@ -459,53 +495,17 @@
 
     
   <url>
-    <loc>http://devasan.com/2014/12/29/%E9%85%8D%E7%BD%AEPodspec%E6%96%87%E4%BB%B6/</loc>
+    <loc>http://devasan.com/2015/01/26/UISearchBar%E5%9C%A8iPhone6%E4%B8%8A%E7%9A%84%E6%80%AA%E5%BC%82%E8%A1%A8%E7%8E%B0/</loc>
     <lastmod>2016-11-01T13:44:35.000Z</lastmod>
     <data>
         <display>
-        <title>配置Podspec文件</title>
-        <pubTime>2014-12-29T15:11:50.000Z</pubTime>
+        <title>UISearchBar在iPhone6上的怪异表现</title>
+        <pubTime>2015-01-26T05:59:36.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="拾人牙慧" url="http://devasan.com/categories/%E6%8B%BE%E4%BA%BA%E7%89%99%E6%85%A7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2014/10/28/hello-world-WordPress/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>世界，你好！</title>
-        <pubTime>2014-10-28T00:56:56.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="三言两语" url="http://devasan.com/categories/%E4%B8%89%E8%A8%80%E4%B8%A4%E8%AF%AD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://devasan.com/2014/11/07/Model%E9%87%8D%E6%9E%84%E8%AE%B0%E4%BA%8B/</loc>
-    <lastmod>2016-11-01T13:44:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>Model重构记事</title>
-        <pubTime>2014-11-07T08:34:59.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="学无止境" url="http://devasan.com/categories/%E5%AD%A6%E6%97%A0%E6%AD%A2%E5%A2%83/"/>
+              <breadCrumb title="前事不忘后事之师" url="http://devasan.com/categories/%E5%89%8D%E4%BA%8B%E4%B8%8D%E5%BF%98%E5%90%8E%E4%BA%8B%E4%B9%8B%E5%B8%88/"/>
           
         </display>
     </data>
